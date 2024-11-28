@@ -1,0 +1,11 @@
+{
+  "applinks" : {
+    "apps" : [],
+    "details" : [
+      {
+        "appID" : "FZCD66B7QX.com.thecleanier.hotel.app",
+        "paths" : [ "*" ]
+      }
+    ]
+  }
+}
