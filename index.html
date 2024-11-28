@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>클리니어 크루</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        window.onload =function (){
+            var visitTime = (new Date()).getTime();
+
+            var isAndroid = /android/i.test(navigator.userAgent);
+            var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+            if(isAndroid){
+                location.href = "https://play.google.com/store/apps/details?id=com.thecleanier.hotel.app";
+            }else if(isIOS){
+                location.href = "https://apps.apple.com/kr/app/%ED%81%B4%EB%A6%AC%EB%8B%88%EC%96%B4-%ED%98%B8%ED%85%94-%ED%81%AC%EB%A3%A8/id6670717838";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>딥링크 연결</h1>
+<p>This is an example of a website that redirects users to the Cleanier app's page on the App Store or Play Store, depending on their device</p>
+</body>
+</html>

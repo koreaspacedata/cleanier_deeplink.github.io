@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.thecleanier.hotel.app",
+    "sha256_cert_fingerprints":
+    ["94:7E:4F:72:2B:64:47:FD:38:55:58:18:B9:D2:2B:3D:A5:1A:80:28:C9:21:A9:42:17:0E:84:3F:0B:AA:71:05"]
+  }
+}]
