@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
     <title>클리니어 크루</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="text/javascript">
-        window.onload =function (){
-            var visitTime = (new Date()).getTime();
+      window.onload = function () {
+        // var visitTime = (new Date()).getTime();
+        const path = window.location.pathname;
 
-            var isAndroid = /android/i.test(navigator.userAgent);
-            var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
-            if(isAndroid){
-                location.href = "https://play.google.com/store/apps/details?id=com.thecleanier.hotel.app";
-            }else if(isIOS){
-                location.href = "https://apps.apple.com/kr/app/%ED%81%B4%EB%A6%AC%EB%8B%88%EC%96%B4-%ED%98%B8%ED%85%94-%ED%81%AC%EB%A3%A8/id6670717838";
-            }
+        var isIOS =
+          /iPhone|iPad|iPod/i.test(navigator.userAgent) && !window.MSStream;
+        var isAndroid = /Android/i.test(navigator.userAgent);
+
+        const apps = {
+          hotel: {
+            ios: "https://apps.apple.com/kr/app/%ED%81%B4%EB%A6%AC%EB%8B%88%EC%96%B4-%ED%98%B8%ED%85%94-%ED%81%AC%EB%A3%A8/id6670717838",
+            android:
+              "https://play.google.com/store/apps/details?id=com.thecleanier.hotel.app",
+          },
+        };
+
+        let targetApp;
+        if (path.startsWith("/hotel")) {
+          targetApp = apps.hotel;
         }
+
+        if (targetApp) {
+          // FIXME: 다이얼로그를 통해 사용자가 스토어로 이동할 지 결정하도록 수정
+          // 만약 이동을 원치않는다면 배경에 홍보 페이지를 구성하거나 홈페이지로 리다이렉트 등 처리 필요
+
+          setTimeout(() => {
+            if (isIOS) {
+              window.location.href = targetApp.ios;
+            } else if (isAndroid) {
+              window.location.href = targetApp.android;
+            }
+          }, 500);
+        }
+      };
     </script>
-</head>
-<body>
-<h1>딥링크 연결</h1>
-<p>This is an example of a website that redirects users to the Cleanier app's page on the App Store or Play Store, depending on their device</p>
-</body>
+  </head>
+  <body>
+    <h1>딥링크 연결</h1>
+    <p>
+      This is an example of a website that redirects users to the Cleanier app's
+      page on the App Store or Play Store, depending on their device
+    </p>
+  </body>
 </html>
