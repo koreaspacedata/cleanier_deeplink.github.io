@@ -1,11 +1,19 @@
 {
   "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "FZCD66B7QX.com.thecleanier.hotel.app",
-        "paths": ["/hotel/*"]
-      }
-    ]
-  }
+      "details": [
+           {
+             "appIDs": [ "FZCD66B7QX.com.thecleanier.app.dev", "FZCD66B7QX.com.thecleanier.app"],
+             "components": [
+               {
+                  "/": "/hotel/*",
+                  "comment": "Matches any URL path that starts with /hotel/"
+               },
+               {
+                  "/": "/hotel/recruitment/*",
+                  "comment": "Matches any URL path that starts with /hotel/recruitment/"
+               }
+             ]
+           }
+       ]
+   }
 }
