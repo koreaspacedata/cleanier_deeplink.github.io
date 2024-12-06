@@ -1,0 +1,20 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.thecleanier.hotel.app.dev",
+      "sha256_cert_fingerprints":
+      ["A4:12:D8:55:87:E6:D8:08:50:E6:44:45:67:50:C5:21:6F:AF:71:C3:B3:03:3F:CF:6D:68:58:25:C0:40:19:50"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.thecleanier.hotel.app",
+      "sha256_cert_fingerprints":
+      ["A4:12:D8:55:87:E6:D8:08:50:E6:44:45:67:50:C5:21:6F:AF:71:C3:B3:03:3F:CF:6D:68:58:25:C0:40:19:50"]
+    }
+  }
+]
