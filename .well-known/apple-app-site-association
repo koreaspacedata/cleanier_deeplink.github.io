@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "FZCD66B7QX.com.thecleanier.app.dev", "FZCD66B7QX.com.thecleanier.app"],
+             "appIDs": [ "FZCD66B7QX.com.thecleanier.hotel.app", "FZCD66B7QX.com.thecleanier.hotel.app.dev" ],
              "components": [
                {
                   "/": "/hotel/*",
